@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-div{
+    width: 100vw;
+    height: 100vh;
+    background-color:darkblue;
+    display: grid;
+    place-items: center;
+}
+.center-div{
+    width: 50%;
+    height: auto;
+}
+.center-div ul{
+    display: flex;
+    justify-content: center;
+}
+.center-div ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 7rem;
+    padding-left: 2rem;
+    color:darkslateblue;
+    animation: light 1.3s linear infinite;
+}
+@keyframes light{
+    0%
+    {
+        color:darkslateblue;
+        text-shadow: none;
+        /* background-color: orange; */
+    }
+    90%
+    {
+        color:darkslateblue;
+        text-shadow: none;
+        /* background-color: royalblue; */
+    }
+    100%
+    {
+        color:orangered;
+        text-shadow: 0 0 1rem red, 0 0 7rem red;
+        /* background-color: chartreuse; */
+    }
+}
+
+.center-div ul li:first-child{
+    padding-left: 0%;
+}
+.center-div ul li:nth-child(1){
+    animation-delay: 0s;
+}
+.center-div ul li:nth-child(2){
+    animation-delay: 0.1s;
+}
+.center-div ul li:nth-child(3){
+    animation-delay: 0.2s;
+}
+.center-div ul li:nth-child(4){
+    animation-delay: 0.3s;
+}
+.center-div ul li:nth-child(5){
+    animation-delay: 0.4s;
+}
+.center-div ul li:nth-child(6){
+    animation-delay: 0.5s;
+}
+.center-div ul li:nth-child(7){
+    animation-delay: 0.6s;
+}

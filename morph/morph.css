@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.morphing {
+  position: relative;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  -webkit-filter: contrast(25) blur(0px);
+          filter: contrast(25) blur(0px);
+}
+
+.word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: word 10s infinite ease-in-out;
+          animation: word 10s infinite ease-in-out;
+}
+
+:nth-child(1) {
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+:nth-child(2) {
+  -webkit-animation-delay: -5.75s;
+          animation-delay: -5.75s;
+}
+
+:nth-child(3) {
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+}
+
+:nth-child(4) {
+  -webkit-animation-delay: -3.25s;
+          animation-delay: -3.25s;
+}
+
+:nth-child(5) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+:nth-child(6) {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+
+:nth-child(7) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes word {
+  0%, 5%, 100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+}
+
+@keyframes word {
+  0%, 5%, 100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+  20%, 80% {
+    -webkit-filter: blur(1em);
+            filter: blur(1em);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=morph.css.map */

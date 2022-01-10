@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html{
+    background-color: black;
+    font-size: 62.5%;
+}
+.center-div{
+    width: 100vw;
+    height: 100ch;
+    display: grid;
+    place-items: center;
+}
+h1{
+    color: white;
+    font-size: 8rem;
+    text-transform: uppercase;
+    position: relative;
+}
+h1::before{
+    content: "~vishwas~";
+    width: 100%;
+    color: darkblue;
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    border-right: .4rem solid darkblue;
+    animation: slide 3s linear infinite;
+    -webkit-animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes slide {
+    0%{width: 0%;}
+    50%{width: 100%;}
+    100%{width: 0%;}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Loader</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <div>
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit minima asperiores illum, fugiat, eveniet impedit
+        sequi quae, eum obcaecati quasi ullam alias. Velit cumque asperiores modi, culpa tenetur est obcaecati!</p>
+    </div>
+
+    <script>
+        var preloader = document.getElementById('loading');
+        function myFunction(){
+            preloader.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
